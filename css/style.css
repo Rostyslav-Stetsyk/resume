@@ -1,4 +1,9 @@
 /* Reset styles */
+html,
+body {
+    scroll-behavior: smooth
+}
+
 h1,
 h2,
 h3,
@@ -268,7 +273,7 @@ body {
 .about-me .content-wrapper {
     position: relative;
     z-index: 1;
-    background: linear-gradient(to left, rgb(17, 27, 51), rgba(13, 20, 30, 1));
+    background: linear-gradient(to left, rgb(17, 27, 51) 10%, rgba(13, 20, 30, 1) 37%, rgba(13, 20, 30, 1));
 }
 
 .about-me .container {
@@ -294,7 +299,7 @@ body {
     display: block;
     height: 40px;
     width: 140px;
-    background-color: rgb(14 22 36);
+    background-color: rgba(13, 20, 30, 1);
     transform: perspective(40px) rotateX(16deg);
     box-shadow: 0px 0px 20px 0px #7FC37E;
 }
@@ -304,6 +309,7 @@ body {
     font-family: 'Courier Prime';
     font-size: 18px;
     color: #E2E8F0;
+    text-indent: 30px;
 }
 
 
