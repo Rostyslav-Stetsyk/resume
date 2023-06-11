@@ -129,7 +129,7 @@ body {
     transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.js-menu-container.is-open+.menu-nav {
+.js-menu-container.is-open .menu-nav {
     transform: translateY(0);
 }
 
@@ -279,6 +279,7 @@ body {
 .about-me .container {
     position: relative;
     z-index: 1;
+    padding-top: 15px;
 }
 
 .title-wrapper {
@@ -305,15 +306,19 @@ body {
 }
 
 .about-me .text {
-    padding-top: 15px;
-    font-family: 'Courier Prime';
-    font-size: 18px;
+    font-family: "Noto Sans";
+    font-size: 16px;
     color: #E2E8F0;
     text-indent: 30px;
+    line-height: 1.05;
+}
+
+.about-me .text:not(:first-child) {
+    margin-top: 15px;
 }
 
 
 
-. * {
-    /* outline: red solid 1px; */
-}
+/* * {
+    outline: red solid 1px;
+} */
